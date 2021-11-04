@@ -1,0 +1,12 @@
+import java.time.YearMonth
+import cats.implicits._
+import treelog.LogTreeSyntaxWithoutAnnotations._
+import selfpub.RoyaltiesTreeLog.*
+
+val sales = List(
+  BigDecimal(5.99), 
+  BigDecimal(12.99), 
+  BigDecimal(1.49)
+)
+val royalties = royaltiesForMonth(sales, YearMonth.of(2021, 10))
+royalties.value.value
