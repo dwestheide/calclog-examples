@@ -17,3 +17,5 @@ def dailySealedArea: Calculation[Area] =
   val soccerFieldArea = length * width <~ "soccer field area"
   val dailySealedArea = soccerFieldArea * 100d.literal <~ "daily sealed area"
   dailySealedArea.in(Hectares)
+
+  

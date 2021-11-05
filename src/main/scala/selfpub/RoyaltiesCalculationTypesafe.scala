@@ -7,7 +7,6 @@ import java.time.YearMonth
 
 import CustomTypes.given
 import CustomOperators.{*, given}
-import Euros.given, RoyaltyRate.given
 
 object RoyaltiesCalculationTypesafe:
 

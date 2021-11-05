@@ -10,7 +10,7 @@ object RoyaltiesCalculation:
   import CustomOperators.*
 
   def royaltiesForMonth(sales: List[BigDecimal], month: YearMonth): Calculation[BigDecimal] =
-    val minimumSelfPubSharePerBook = BigDecimal(0.8) ~ "minimum SelfPub share oer book in EUR"
+    val minimumSelfPubSharePerBook = BigDecimal(0.8) ~ "minimum SelfPub share per book in EUR"
     val royaltyRate = BigDecimal(0.75) ~ "royalty rate"
     val numberOfSales = sales.size ~ "number of sales"
     val totalRevenue = sales.sum ~ "total revenue"
